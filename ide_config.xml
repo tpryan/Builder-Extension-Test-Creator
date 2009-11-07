@@ -1,0 +1,79 @@
+<application>
+	<name>ColdFusion Builder Test Creator</name>
+	<author>Terry Ryan</author>
+	<version>1.0</version>
+	<email>terry.ryan@adobe.com</email>	
+	<description>Creates a static file for the purposes of testing your ColdFusion Builder Extension</description>	
+	<license>Copyright 2009 Terrence Ryan
+		Licensed under the Apache License, Version 2.0 (the "License");
+		you may not use this file except in compliance with the License.
+		You may obtain a copy of the License at
+		
+			http://www.apache.org/licenses/LICENSE-2.0
+		
+		Unless required by applicable law or agreed to in writing, software
+		distributed under the License is distributed on an "AS IS" BASIS,
+		WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+		See the License for the specific language governing permissions and
+		limitations under the License.		
+	</license>
+	
+	<menucontributions >
+
+		<contribution target="projectview">
+			<menu name="ColdFusion Builder Test Creator">
+	    		<action name="Create Test File" handlerid="createTestFile" showResponse="true">
+					<input name="cfbtc_path" label="Path" tooltip="The dir location for the file this will create." type="dir" default="{$projectlocation}"/>
+					<input name="cfbtc_file" label="File" tooltip="The file name for the file this will create." type="string" default="sample.xml"/>
+					<input name="cfbtc_formsim" label="Form Details" type="string" default=""
+						helpmessage="Any simulated form details you would like to add in CFML. ex file=sample.xml, path=/wwwroot" 
+						tooltip="Any simulated form details you would like to add in CFML. ex file=sample.xml, path=/wwwroot" />
+	    		</action>
+			</menu>
+		</contribution>
+		<contribution target="rdsview">
+			<menu name="ColdFusion Builder Test Creator">
+	    		<action name="Create Test File" handlerid="createTestFile" showResponse="true">
+					<input name="cfbtc_path" label="Path" tooltip="The dir location for the file this will create." type="dir" default="{$projectlocation}"/>
+					<input name="cfbtc_file" label="File" tooltip="The file name for the file this will create." type="string" default="sample.xml"/>
+					<input name="cfbtc_formsim" label="Form Details" type="string" default=""
+						helpmessage="Any simulated form details you would like to add in CFML. ex file=sample.xml, path=/wwwroot" 
+						tooltip="Any simulated form details you would like to add in CFML. ex file=sample.xml, path=/wwwroot" />
+	    		</action>
+			</menu>
+		</contribution>
+		<contribution target="outlineview">
+			<menu name="ColdFusion Builder Test Creator">
+	    		<action name="Create Test File" handlerid="createTestFile" showResponse="true">
+					<input name="cfbtc_path" label="Path" tooltip="The dir location for the file this will create." type="dir" default="{$projectlocation}"/>
+					<input name="cfbtc_file" label="File" tooltip="The file name for the file this will create." type="string" default="sample.xml"/>
+					<input name="cfbtc_formsim" label="Form Details" type="string" default=""
+						helpmessage="Any simulated form details you would like to add in CFML. ex file=sample.xml, path=/wwwroot" 
+						tooltip="Any simulated form details you would like to add in CFML. ex file=sample.xml, path=/wwwroot" />
+	    		</action>
+			</menu>
+		</contribution>
+		<contribution target="editor">
+			<menu name="ColdFusion Builder Test Creator">
+	    		<action name="Create Test File" handlerid="createTestFile" showResponse="true">
+					<input name="cfbtc_path" label="Path" tooltip="The dir location for the file this will create." type="dir" default="{$projectlocation}"/>
+					<input name="cfbtc_file" label="File" tooltip="The file name for the file this will create." type="string" default="sample.xml"/>
+					<input name="cfbtc_formsim" label="Form Details" type="string" default=""
+						helpmessage="Any simulated form details you would like to add in CFML. ex file=sample.xml, path=/wwwroot" 
+						tooltip="Any simulated form details you would like to add in CFML. ex file=sample.xml, path=/wwwroot" />
+	    		</action>
+				<action name="Paste Code" handlerid="pasteCode" showResponse="true">
+	    		</action>
+			</menu>
+		</contribution>
+		
+
+    </menucontributions>
+	
+	<handlers>		
+		<handler id="createTestFile" type="CFM" filename="createTestFile.cfm" />
+		<handler id="pasteCode" type="CFM" filename="pastecode.cfm" />
+	</handlers>
+	
+	
+</application>	

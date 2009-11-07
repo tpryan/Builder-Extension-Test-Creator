@@ -1,0 +1,20 @@
+<event>
+    <ide>
+        <editor>
+            <file location="/Users/terryr/Sites/centaur.dev/CFCIntrospector/test.cfc" name="test.cfc" project="CFCIntrospector" projectlocation="/Users/terryr/Sites/centaur.dev/CFCIntrospector" projectrelativelocation="test.cfc" />
+            <selection endcolumn="15" endline="10" startcolumn="2" startline="3">
+                <text>
+                    &lt;cffunction name=&quot;list&quot; output=&quot;FALSE&quot; access=&quot;public&quot;  returntype=&quot;query&quot; hint=&quot;&quot; &gt;
+                		&lt;cfquery name=&quot;result&quot; datasource=&quot;cfartgallery&quot;&gt;
+                			SELECT *
+                			FROM artist
+                		
+                		&lt;/cfquery&gt;
+                		&lt;cfreturn result /&gt;
+                	&lt;/cffunction&gt;
+                </text>
+            </selection>
+        </editor>
+    </ide>
+    <user />
+</event>
